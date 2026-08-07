@@ -1,0 +1,109 @@
+/* Notitimba Online — estilos */
+:root{
+  --verde:#0b6e4f;--verde-osc:#07553d;--verde-claro:#e8f5f0;
+  --oro:#f2b705;--oro-osc:#c99400;
+  --tinta:#1b2733;--gris:#5b6b7b;--borde:#e2e8ee;--fondo:#f7fafc;--blanco:#fff;
+  --rojo:#c0392b;
+  --radio:12px;
+  --sombra:0 2px 10px rgba(15,40,30,.08);
+  font-size:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65}
+a{color:var(--verde);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%}
+.contenedor{max-width:1080px;margin:0 auto;padding:0 16px}
+
+/* Header */
+.top{background:var(--verde);color:#fff}
+.top .contenedor{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;gap:8px}
+.logo{font-size:1.45rem;font-weight:800;color:#fff;letter-spacing:-.5px}
+.logo span{color:var(--oro)}
+.logo:hover{text-decoration:none}
+.fecha-hoy{font-size:.85rem;opacity:.9}
+nav.principal{background:var(--verde-osc)}
+nav.principal ul{list-style:none;display:flex;flex-wrap:wrap;gap:2px;max-width:1080px;margin:0 auto;padding:0 8px}
+nav.principal a{display:block;color:#fff;padding:10px 12px;font-size:.92rem;font-weight:600;border-radius:6px 6px 0 0}
+nav.principal a:hover,nav.principal a.activo{background:var(--oro);color:var(--tinta);text-decoration:none}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--verde) 0%,var(--verde-osc) 100%);color:#fff;padding:38px 0 42px;text-align:center}
+.hero h1{font-size:2rem;font-weight:800;margin-bottom:10px}
+.hero p{max-width:720px;margin:0 auto 18px;font-size:1.05rem;opacity:.95}
+.hero .botones{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.boton{display:inline-block;background:var(--oro);color:var(--tinta);font-weight:700;padding:11px 22px;border-radius:999px;box-shadow:var(--sombra)}
+.boton:hover{background:var(--oro-osc);text-decoration:none}
+.boton.secundario{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.5)}
+
+/* Layout */
+main{padding:28px 0 40px}
+.grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:18px 0}
+.tarjeta{background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);padding:20px;box-shadow:var(--sombra)}
+.tarjeta h3{margin-bottom:8px;color:var(--verde-osc)}
+.tarjeta h3 a{color:inherit}
+.tarjeta p{font-size:.95rem;color:var(--gris)}
+article h1{font-size:1.7rem;margin-bottom:12px;color:var(--verde-osc)}
+article h2{font-size:1.3rem;margin:26px 0 10px;color:var(--verde-osc)}
+article h3{font-size:1.1rem;margin:18px 0 8px}
+article p,article li{margin-bottom:10px}
+article ul,article ol{padding-left:22px;margin-bottom:14px}
+.caja{background:var(--verde-claro);border-left:4px solid var(--verde);border-radius:0 var(--radio) var(--radio) 0;padding:14px 16px;margin:16px 0;font-size:.95rem}
+.aviso{background:#fff7e0;border-left:4px solid var(--oro);border-radius:0 var(--radio) var(--radio) 0;padding:14px 16px;margin:16px 0;font-size:.9rem;color:#6b5300}
+
+/* Tablas */
+table{width:100%;border-collapse:collapse;background:var(--blanco);border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra);margin:14px 0;font-size:.95rem}
+th{background:var(--verde);color:#fff;text-align:left;padding:10px 12px;font-weight:700}
+td{padding:9px 12px;border-top:1px solid var(--borde)}
+tr:nth-child(even) td{background:#fbfdfc}
+
+/* Resultados quiniela */
+.sorteos{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin:18px 0}
+.sorteo{background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);box-shadow:var(--sombra);overflow:hidden}
+.sorteo header{background:var(--verde);color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+.sorteo header h3{font-size:1rem}
+.sorteo header .hora{font-size:.8rem;background:rgba(255,255,255,.18);padding:2px 8px;border-radius:999px}
+.cabeza{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px dashed var(--borde)}
+.cabeza .num{font-size:1.6rem;font-weight:800;color:var(--verde-osc);background:var(--verde-claro);border:2px solid var(--verde);border-radius:10px;padding:4px 14px;min-width:74px;text-align:center}
+.cabeza .etq{font-size:.8rem;color:var(--gris);text-transform:uppercase;letter-spacing:.5px}
+.numeros{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:12px 14px}
+.numeros div{position:relative;background:#f2f6f4;border:1px solid var(--borde);border-radius:8px;text-align:center;padding:8px 2px 6px;font-weight:700;font-size:.98rem}
+.numeros div small{display:block;font-weight:400;font-size:.62rem;color:var(--gris)}
+.pendiente{color:#9aa8b5!important}
+.estado{font-size:.8rem;text-align:center;color:var(--gris);padding:0 14px 12px}
+
+/* Buscador de sueños */
+.buscador{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}
+.buscador input{flex:1;min-width:220px;padding:12px 16px;border:2px solid var(--verde);border-radius:999px;font-size:1rem;outline:none}
+.buscador input:focus{border-color:var(--oro-osc)}
+.tabla-suenos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:16px 0}
+.sueno{background:var(--blanco);border:1px solid var(--borde);border-radius:10px;padding:10px;display:flex;align-items:center;gap:10px;box-shadow:var(--sombra)}
+.sueno b{background:var(--verde);color:#fff;border-radius:8px;padding:4px 9px;font-size:1rem;min-width:42px;text-align:center}
+.sueno span{font-size:.9rem}
+.sin-resultados{display:none;text-align:center;color:var(--gris);padding:20px}
+
+/* Publicidad */
+.anuncio{margin:20px auto;text-align:center;min-height:90px;background:repeating-linear-gradient(45deg,#f4f6f8,#f4f6f8 12px,#eef1f4 12px,#eef1f4 24px);border:1px dashed var(--borde);border-radius:var(--radio);display:flex;align-items:center;justify-content:center;color:#b3bec8;font-size:.8rem}
+
+/* Footer */
+footer{background:var(--tinta);color:#c8d2dc;margin-top:30px;font-size:.9rem}
+footer .contenedor{padding:30px 16px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+footer h4{color:#fff;margin-bottom:10px}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+footer a{color:#c8d2dc}
+footer a:hover{color:var(--oro)}
+.legal{border-top:1px solid #33404d;text-align:center;padding:14px 16px;font-size:.8rem;color:#8595a5}
+.mas18{display:inline-block;background:var(--rojo);color:#fff;font-weight:800;border-radius:6px;padding:2px 8px;font-size:.8rem;margin-right:6px}
+
+/* Migas */
+.migas{font-size:.85rem;color:var(--gris);margin-bottom:14px}
+.migas a{color:var(--gris)}
+
+@media(max-width:640px){
+  .hero h1{font-size:1.5rem}
+  article h1{font-size:1.4rem}
+  .numeros{grid-template-columns:repeat(4,1fr)}
+  nav.principal a{padding:9px 9px;font-size:.85rem}
+}

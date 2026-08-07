@@ -1,0 +1,12 @@
+{
+  "fecha": "2026-08-07",
+  "fecha_texto": "Viernes 7 de agosto de 2026",
+  "quiniela": {
+    "nacional":  { "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} },
+    "provincia": { "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} },
+    "santa-fe":  { "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} },
+    "cordoba":   { "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} },
+    "entre-rios":{ "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} },
+    "montevideo":{ "previa": {"numeros": []}, "primera": {"numeros": []}, "matutina": {"numeros": []}, "vespertina": {"numeros": []}, "nocturna": {"numeros": []} }
+  }
+}
